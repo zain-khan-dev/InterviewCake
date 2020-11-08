@@ -67,6 +67,14 @@ Generally, out-of-place algorithms are considered safer because they avoid side 
 
 A dynamic array is an array with automatic resizing
 
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
+
+
+
 
 | Complexity  | Average Case | Worst Case |
 
