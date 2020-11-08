@@ -1,5 +1,6 @@
 # Big O notation
 Big O notation is the language we use for talking about how long an algorithm takes to run.
+    
     - It tells us how quickly the runtime grows
     - It is relative to the input
     - It depicts when the input is arbitarily large (Asymptotic when the input is very large)
