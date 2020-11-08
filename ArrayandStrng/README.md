@@ -63,4 +63,45 @@ But be careful: an in-place algorithm can cause side effects. Your input is "des
 
 Generally, out-of-place algorithms are considered safer because they avoid side effects. You should only use an in-place algorithm if you're space constrained or you're positive you don't need the original input anymore, even for debugging. 
 
+# Dynamic Array
+
+A dynamic array is an array with automatic resizing
+
+| Average Case | Worst Case |
+| - - - - - -  | - - - - -  |
+| space  | O(n) | 	O(n)    |
+| lookup  | O(1) | 	O(1)    |
+| append  | O(1) | 	O(n)    |
+| insert  | O(n) | 	O(n)    |
+| delete  | O(n) | 	O(n)    |
+
+
+
+
+### Strength
+
+- Fast Lookup:-Retreiving an element takes O(1) time
+- Variable Size:-Can add as many elment as we want will resize automatically
+- Cache-Friendly:-Place element right next to each other making efficient use of cache
+### Weakness
+
+- Slow worst case append:-In the worst case append takes O(1) since it needs to resize and copy elements over
+- Costly insert and delete:-Since the element are stored next to each other deleting an element from middle still takes moving back all the elements to freed up space
+
+## Size vs Capacity
+
+Size is the limit to which elemets are inserted and capacity overall size of the array in C++ it uses endIndex to keep track where the dynamic array ends and extra capacity begins
+
+## Doubling Appends
+
+When the capacity is full the extra append try to make capacity by increasing the size of the array usually by doubling the capacity 
+> The array is not extended because the extra space might be taken by some other program
+
+## Amortized Cost of appending
+
+    1. The time cost of each special O(n) "doubling append" doubles each time.
+    2. At the same time, the number of O(1) appends you get until the next doubling append also doubles.
+
+These two things cancel out and we say each one has O(1) time of appending 
+
 
