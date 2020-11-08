@@ -1,24 +1,24 @@
 # Big O notation
 Big O notation is the language we use for talking about how long an algorithm takes to run.
-    • It tells us how quickly the runtime grows
-    • It is relative to the input
-    • It depicts when the input is arbitarily large (Asymptotic when the input is very large)
-    • We drop the Constant and the less signifcant terms
-    • Worst case is implied can also tell best case 
-    • We are talking about extra space dont talk about the space taken by input
-    • Sometimes the constant matters
-    • Beware of premature optimization:-Sometimes improving time or space complexity negatiively impact readability	
+    - It tells us how quickly the runtime grows
+    - It is relative to the input
+    - It depicts when the input is arbitarily large (Asymptotic when the input is very large)
+    - We drop the Constant and the less signifcant terms
+    - Worst case is implied can also tell best case 
+    - We are talking about extra space dont talk about the space taken by input
+    - Sometimes the constant matters
+    - Beware of premature optimization:-Sometimes improving time or space complexity negatiively impact readability	
 # Data Structure
 What we will implement
-    • Random access memory
-    • Binary numbers
-    • Fixed width Integers
-    • Arrays
-    • Strings
-    • Pointers
-    • Dynamic Arrays
-    • Linked List
-    • Hash Tables
+   - Random access memory
+   - Binary numbers
+   - Fixed width Integers
+   - Arrays
+   - Strings
+   - Pointers
+   - Dynamic Arrays
+   - Linked List
+   - Hash Tables
 ## Random Access Memory
 When a computer is running code, it needs to keep track of variables (numbers, strings, arrays, etc.). 
 RAM is not where mp3s and apps get stored. In addition to "memory," your computer has storage (sometimes called "persistent storage" or "disk"). While memory is where we keep the variables our functions allocate as they crunch data for us, storage is where we keep files like mp3s, videos, Word documents, and even executable programs or apps. 
