@@ -11,6 +11,7 @@ Big O notation is the language we use for talking about how long an algorithm ta
     - Beware of premature optimization:-Sometimes improving time or space complexity negatiively impact readability	
 # Data Structure
 What we will implement
+
    - Random access memory
    - Binary numbers
    - Fixed width Integers
@@ -100,13 +101,13 @@ x^n=p
 logx(p) x called base as it is at bottom
 Solving for n when n is an exponent
 Rules
-    • Simplification: logb​(bx)=x . . . Useful for bringing a variable down from an exponent. 
-    • Multiplication: logb​(x∗y)=logb​(x)+logb​(y) 
-    • Division: logb​(x/y)=logb​(x)−logb​(y) 
-    • Powers: logb​(xy)=y∗logb​(x) 
-    • Change of base: logb​(x)=logc​(b)logc​(x)​ . . . Useful for changing the base of a logarithm from b to c. 
+    • Simplification: log<sub>b</sub>​(bx)=x . . . Useful for bringing a variable down from an exponent. 
+    • Multiplication: log<sub>b</sub>(x∗y)=log<sub>b</sub>​(x)+log<sub>b</sub>​(y) 
+    • Division: log<sub>b</sub>(x/y)=log<sub>b</sub>(x)−log<sub>b</sub>(y) 
+    • Powers: log<sub>b</sub>(x<sup>y</sup>y)=y∗log<sub>b</sub>​(x) 
+    • Change of base: log<sub>b</sub>(x)=log<sub>b</sub>​(b)log<sub>c</sub>(x)​ . . . Useful for changing the base of a logarithm from b to c. 
 "How many times must we double 1 before we get to n" is a question we often ask ourselves in computer science. Or, equivalently, "How many times must we divide n in half in order to get back down to 1?" 
-The answer to both of them is same log2(n)
+The answer to both of them is same log<sub>2</sub>(n)
 ### Logarithm in binary search
     1. Start with the middle number: is it bigger or smaller than our target number? Since the vector is sorted, this tells us if the target would be in the left half or the right half of our vector. 
     2. We've effectively divided the problem in half. We can "rule out" the whole half of the vector that we know doesn't contain the target number. 
@@ -114,11 +115,11 @@ The answer to both of them is same log2(n)
 This way we are diving the array in half and therefore time complexity till we reach 1 is log2(n)
 ### Logarithms in Sorting
 nlog2(n) is the best worst case for sorting.This is for comparison based sorting if we can bound our numbers we can bring down time complexity to O(n)
-In merge sort we divide the array until it contains one element this implies the array is sorted then we merge these sorted arrays.To reach the array diving it into half is log2(n) and merging at each level takes o(n) time thus time complexiy is nlog2(n)
+In merge sort we divide the array until it contains one element this implies the array is sorted then we merge these sorted arrays.To reach the array diving it into half is log<sub>2</sub>(n) and merging at each level takes O(n) time thus time complexiy is nlog<sub>2</sub>(n)
 
 ### Logarithm in Trees
 Each level in a tree is full this type of tree is called a perfect tree
-At each level the number of nodes doubles thus the height of tree we can conclude is log2(n)
+At each level the number of nodes doubles thus the height of tree we can conclude is log<sub>2</sub>(n)
 This means how much time we take to reach n from 1 doubling at each level or how many times should we double 1 to reach n
 The exact formula for the number of nodes on the last level is: 
 2n+1
@@ -126,6 +127,6 @@ Where does the +1 come from?
 The number of nodes in our perfect binary tree is always odd. We know this because the first level always has 1 node, and the other levels always have an even number of nodes. Adding a bunch of even numbers always gives us an even number, and adding 1 to that result always gives us an odd number. 
 Taking half of an odd number gives us a fraction. So if the last level had exactly half of our n nodes, it would have to have a "half-node." But that's not a thing. 
 Instead, it has the "rounded up" version of half of our odd n nodes. In other words, it has the exact half of the one-greater-and-thus-even number of nodes n+1. Hence 2n+1
-h≈log2​((n+1​)/2)+1
-h=log2(n+1)
-lg is interpreted as log2
+h≈log<sub>2</sub>​((n+1​)/2)+1
+h=log<sub>2</sub>(n+1)
+lg is interpreted as log<sub>2</sub>
