@@ -32,7 +32,7 @@ When want to use something other to index element use unordred map
 Array slicing involves taking a subset of an array and allocating a new array with those elements
 This takes O(n) time and space
 
-# In Place Algorithm
+<h1 style="align:center"> In Place Algorithm</h1>
 The call stack is what a program uses to keep track of the function calls. The call stack is made of stack frames one for each call
 A stack frame usually consist of 
 - Local variables
@@ -62,3 +62,5 @@ Working in-place is a good way to save time and space. An in-place algorithm avo
 But be careful: an in-place algorithm can cause side effects. Your input is "destroyed" or "altered," which can affect code outside of your function. For example: 
 
 Generally, out-of-place algorithms are considered safer because they avoid side effects. You should only use an in-place algorithm if you're space constrained or you're positive you don't need the original input anymore, even for debugging. 
+
+
