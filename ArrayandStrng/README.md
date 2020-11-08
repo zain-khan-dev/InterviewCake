@@ -35,17 +35,30 @@ This takes O(n) time and space
 # In Place Algorithm
 The call stack is what a program uses to keep track of the function calls. The call stack is made of stack frames one for each call
 A stack frame usually consist of 
-Local variables
-Arguments passed into functions
-Information about the caller stack frame 
-The return address what the program should do after the function returns 
+- Local variables
+- Arguments passed into functions
+- Information about the caller stack frame 
+- The return address what the program should do after the function returns 
+
+
 This calling of stack is usually used in recursive algorithm 
+
 We must account for the stack space in recursive function as it may seem deceiving when we use recursive function and use stack space This can also lead to stack overflow when we do not return and not pop stack.Call stack is popped when function returns
+
 If the very last thing a function does is call another function, then its stack frame might not be needed any more. The function could free up its stack frame before doing its final call, saving space. 
+
 This is called tail call optimization (TCO). If a recursive function is optimized with TCO, then it may not end up with a big call stack. 
-In general, most languages don't provide TCO. Scheme is one of the few languages that guarantee tail call optimization. Some Ruby, C, and Javascript implementations may do it. Python and Java decidedly don't. 
+
+In general, most languages don't provide TCO. Scheme is one of the few languages that guarantee tail call optimization. 
+
+Some Ruby, C, and Javascript implementations may do it. Python and Java decidedly don't. 
+
 In-place algorithms are sometimes called destructive, since the original input is "destroyed" (or modified) during the function call. 
+
 Careful: "In-place" does not mean "without creating any additional variables!" Rather, it means "without creating a new copy of the input." In general, an in-place function will only create additional variables that are O(1) space. 
+
 Working in-place is a good way to save time and space. An in-place algorithm avoids the cost of initializing or copying data structures, and it usually has an O(1) space cost. 
+
 But be careful: an in-place algorithm can cause side effects. Your input is "destroyed" or "altered," which can affect code outside of your function. For example: 
+
 Generally, out-of-place algorithms are considered safer because they avoid side effects. You should only use an in-place algorithm if you're space constrained or you're positive you don't need the original input anymore, even for debugging. 
