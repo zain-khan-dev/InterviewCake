@@ -69,6 +69,7 @@ A dynamic array is an array with automatic resizing
 
 
 | Complexity | Average Case | Worst Case |
+| - - -| - - -| - - -|
 | space  | O(n) | 	O(n)    |
 | lookup  | O(1) | 	O(1)    |
 | append  | O(1) | 	O(n)    |
