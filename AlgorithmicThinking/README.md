@@ -1,14 +1,14 @@
 # Big O notation
 Big O notation is the language we use for talking about how long an algorithm takes to run.
     
-    - It tells us how quickly the runtime grows
-    - It is relative to the input
-    - It depicts when the input is arbitarily large (Asymptotic when the input is very large)
-    - We drop the Constant and the less signifcant terms
-    - Worst case is implied can also tell best case 
-    - We are talking about extra space dont talk about the space taken by input
-    - Sometimes the constant matters
-    - Beware of premature optimization:-Sometimes improving time or space complexity negatiively impact readability	
+- It tells us how quickly the runtime grows
+- It is relative to the input
+- It depicts when the input is arbitarily large (Asymptotic when the input is very large)
+- We drop the Constant and the less signifcant terms
+- Worst case is implied can also tell best case 
+- We are talking about extra space dont talk about the space taken by input
+- Sometimes the constant matters
+- Beware of premature optimization:-Sometimes improving time or space complexity negatiively impact readability	
 # Data Structure
 What we will implement
 
@@ -101,11 +101,11 @@ x^n=p
 logx(p) x called base as it is at bottom
 Solving for n when n is an exponent
 Rules
-    • Simplification: log<sub>b</sub>​(bx)=x . . . Useful for bringing a variable down from an exponent. 
-    • Multiplication: log<sub>b</sub>(x∗y)=log<sub>b</sub>​(x)+log<sub>b</sub>​(y) 
-    • Division: log<sub>b</sub>(x/y)=log<sub>b</sub>(x)−log<sub>b</sub>(y) 
-    • Powers: log<sub>b</sub>(x<sup>y</sup>y)=y∗log<sub>b</sub>​(x) 
-    • Change of base: log<sub>b</sub>(x)=log<sub>b</sub>​(b)log<sub>c</sub>(x)​ . . . Useful for changing the base of a logarithm from b to c. 
+- Simplification: log<sub>b</sub>​(bx)=x . . . Useful for bringing a variable down from an exponent.
+- Multiplication: log<sub>b</sub>(x∗y)=log<sub>b</sub>​(x)+log<sub>b</sub>​(y)
+- Division: log<sub>b</sub>(x/y)=log<sub>b</sub>(x)−log<sub>b</sub>(y)
+- Powers: log<sub>b</sub>(x<sup>y</sup>y)=y∗log<sub>b</sub>​(x)
+- Change of base: log<sub>b</sub>(x)=log<sub>b</sub>​(b)log<sub>c</sub>(x)​ . . . Useful for changing the base of a logarithm from b to c. 
 "How many times must we double 1 before we get to n" is a question we often ask ourselves in computer science. Or, equivalently, "How many times must we divide n in half in order to get back down to 1?" 
 The answer to both of them is same log<sub>2</sub>(n)
 ### Logarithm in binary search
